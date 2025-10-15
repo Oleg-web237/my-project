@@ -1,0 +1,50 @@
+body {
+    background: url(../img/foon.jpg) 0 0 / 100% no-repeat;
+}
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.header {}
+
+.header__top {}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {}
+
+.logo {}
+
+.header__nav {}
+
+.header__list {
+    display: flex;
+}
+
+.header__link {
+    padding-left: 40px;
+}
+
+.header__item {
+    color: brown;
+    font-size: 30px;
+}
+
+.header__body {}
