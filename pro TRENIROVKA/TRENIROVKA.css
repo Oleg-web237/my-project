@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(165, 165, 165);
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+/* ----------------------------------body--------------- */
+
+.header {}
+
+.header__inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 15px;
+}
+
+.header__nav {}
+
+.header__list {}
+
+.header__link {}
+
+.header__item {}
+
+.header__logo {}
+
+.header__social {}
+
+.social__list {}
+
+.social__link {}
