@@ -1,0 +1,35 @@
+.header__menu {
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+@media (width <= 1100px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+
+
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 436px;
+}
+
+.menu__item {
+  white-space: nowrap;
+
+}
+
+.menu__link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black-color);
+}
