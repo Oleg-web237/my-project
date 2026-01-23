@@ -1,0 +1,11 @@
+@media (width >1100px) {
+
+  .header__burger,
+  .menu__burger-title {
+    display: none;
+  }
+}
+
+.menu__burger-title {
+  margin-bottom: 15px;
+}
