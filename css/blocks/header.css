@@ -1,0 +1,97 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+}
+
+.menu__list {
+  display: flex;
+}
+
+/* поле поиска */
+.header__search {}
+
+.search__form {
+
+  position: relative;
+}
+
+.search-form__icon {
+  position: absolute;
+  left: 23px;
+  top: 10px;
+  transform: translatex(-50%);
+
+}
+
+
+
+
+
+.search__input {
+  /* display: flex; */
+  align-items: center;
+  border-radius: 62px;
+  padding: 12px 16px 12px 52px;
+  /* padding-top: 12px; */
+  width: 462px;
+
+  background: #f0f0f0;
+  border: none;
+}
+
+/* тренировка позишин */
+.wrapper {
+  display: flex;
+  gap: 20px;
+  background-color: bisque;
+  height: 1000px;
+}
+
+.block-1 {
+  background-color: blueviolet;
+  width: 200px;
+  height: 200px;
+}
+
+.block-2 {
+  background-color: rgb(43, 58, 226);
+  width: 200px;
+  height: 200px;
+}
+
+.block-3 {
+  background-color: rgb(23, 0, 44);
+  width: 200px;
+  height: 200px;
+}
+
+/* ------------------------- */
+
+.container {
+
+}
+.wrapper {
+  position: relative;
+  min-width: 500px;
+}
+.block-1 {
+    position: absolute;
+  left: 0px;
+  top: 0px;
+  
+}
+
+/* -------------------------------------- */
+.block-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: black;
+ 
+ transform: translate(-50% ,-50%); 
+
+}
