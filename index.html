@@ -1,0 +1,528 @@
+<!doctype html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./CSS/index.css" />
+  <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon" />
+  <script defer src="./js/index.js" type="module"></script>
+  <title>SHOP.CO</title>
+</head>
+
+<body class="page__body">
+  <div class="register__wrapp">
+    <div class="register__wrapp-container">
+      <p class="register__text">
+        <span>Зарегестрируйтесь и получите скидку 20% на первую покупку.</span>
+        <a class="register__text-link" href="#">Зарегестрироваться сейчас</a>
+      </p>
+      <button class="register__button" title="Закрыть" aria-label="Закрыть">
+        <svg width="24" height="24">
+          <use class="register__actions-icon" href="./icons/sprite.svg#register-cross"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="header__controls">
+        <div class="header__actions">
+          <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false"
+            aria-controls="header__menu">
+            <svg width="24" height="24">
+              <use class="burger__icon-menu" href="./icons/sprite.svg#burger"></use>
+              <!--НАСТРОИТЬ ПРИ ИЗУЧЕНИИ JS <use
+                  class="burger__icon-cross"
+                  href="./icons/sprite.svg#cross"
+                ></use> -->
+            </svg>
+          </button>
+        </div>
+      </div>
+      <a href="#" class="logo header__logo" lang="en" aria-label="Логотип" title="Логотип">SHOP.CO</a>
+      <nav class="menu header__menu" id="header__menu" aria-label="Главное меню">
+        <div class="menu__burger-nav">
+          <h2 class="menu__burger-title">Меню</h2>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Магазин </a>
+            <svg class="menu__link-nane" width="16" height="16">
+              <use class="menu__icon-down" href="./icons/sprite.svg#down"></use>
+            </svg>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Скидки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#Novyye postupleniya" class="menu__link">Новые поступления</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Бренды</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-form">
+        <label class="search-form__btn">
+          <svg class="search-form__icon" width="24" height="24">
+            <use class="header__actions-icon" href="./icons/sprite.svg#poisk"></use>
+          </svg>
+          <input name="Поиск" type="text" class="search-form__txt" placeholder="Искать товары..." />
+        </label>
+      </div>
+      <div class="header__actions">
+        <svg class="search-form__icon poisk-blac" width="24" height="24">
+          <use class="header__actions-icon" href="./icons/sprite.svg#poisk-blac"></use>
+        </svg>
+        <button class="header__actions-button" title="Корзина" aria-label="Корзина">
+          <svg width="24" height="24">
+            <use class="header__actions-icon" href="./icons/sprite.svg#card"></use>
+          </svg>
+        </button>
+        <button class="header__actions-button" title="Пользователь" aria-label="Пользователь">
+          <svg width="24" height="24">
+            <use class="header__actions-icon" href="./icons/sprite.svg#user"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="style">
+      <div class="container style__container"></div>
+      <div class="style__img-wrapper">
+        <picture>
+          <source srcset="" type="imeges/webp" />
+          <img width="1440px" height="663" class="style__img" loading="lazy" src="./imeges/Rectangle 222.png"
+            alt="Девушка и парень в очках и джинсовых куртках" />
+        </picture>
+      </div>
+      <div class="style__content-wrapper">
+        <h1 class="style__title title-xs">
+          НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+        </h1>
+        <p class="style__title-text text-regular">
+          Просмотрите наш набор тщательно сделанной одежды, созданный чтобы
+          подчеркнуть ваш индивидуальный стиль.
+        </p>
+        <button class="style__button">Купить сейчас</button>
+        <div class="style__content-nember">
+          <div class="style__start-wrapp">
+            <div class="style__start">
+              <div class="style__number number">2,000+</div>
+              <p class="style__text text-regular">Качественных товаров</p>
+            </div>
+            <div class="style__start">
+              <div class="style__number number">200+</div>
+              <p class="style__text text-regular">Всемирных брендов</p>
+            </div>
+          </div>
+          <div class="style__start style-bn">
+            <div class="style__number number">30,000+</div>
+            <p class="style__text text-regular">Счастливых клиентов</p>
+          </div>
+        </div>
+        <div class="style__img-fons">
+          <img src="./imeges/Group 15.png" width="390px" height="448px" alt="" />
+        </div>
+      </div>
+      <div class="brand-list">
+        <svg class="brand-list-icon-1" width="164" hieght="34px">
+          <use href="./icons/sprite.svg#versase"></use>
+        </svg>
+        <svg class="brand-list-icon-2" width="91" height="38">
+          <use href="./icons/sprite.svg#zara"></use>
+        </svg>
+        <svg class="brand-list-icon-3" width="156" height="36">
+          <use class="brand-list-icon" href="./icons/sprite.svg#gucci"></use>
+        </svg>
+        <svg class="brand-list-icon-4" width="194" height="32">
+          <use class="brand-list-icon" href="./icons/sprite.svg#prada"></use>
+        </svg>
+        <svg class="brand-list-icon-5" width="207" height="34">
+          <use class="brand-list-icon" href="./icons/sprite.svg#calvin"></use>
+        </svg>
+      </div>
+    </section>
+    <section id="Novyye postupleniya" class="news">
+      <div class="container news__container">
+        <h2 class="news__catalog-title title-xs">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+        <article class="news-cotalog__products">
+          <div class="product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="./imeges/img-product/product-1.png" alt="Темная Футболка на сером фоне"
+                width="295" height="298">
+            </div>
+            <h3 class="product__title title-bold">Футболка с лентой</h3>
+            <div class="product__rating">
+              <div class="product__stars">
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.35842 16.7243L8.79246 13.701V0L6.17325 5.63991L0 6.38809L4.55449 10.6219L3.35842 16.7243Z"
+                    fill="#FFC633" />
+                </svg>
+                <span class="product__reyting">4.5/5</span>
+              </div>
+            </div>
+            <p class="product__price title-bold">₽5000</p>
+          </div>
+          <div class="product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="./imeges/img-product/product -2.png" alt="Темная Футболка на сером фоне"
+                width="295" height="298">
+            </div>
+            <h3 class="product__title title-bold">Узкие джинсы</h3>
+            <div class="product__rating">
+              <div class="product__stars">
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+
+                <svg class="product__star" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.35842 16.7243L8.79246 13.701V0L6.17325 5.63991L0 6.38809L4.55449 10.6219L3.35842 16.7243Z"
+                    fill="#FFC633" />
+                </svg>
+                <span class="product__reyting">3.5/5</span>
+              </div>
+            </div>
+            <div class="product__price-wrapper">
+              <p class="product__price title-bold-f">₽5000</p>
+              <p class="product__price-old">₽6000</p>
+              <div class="product__discount">-20%</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="./imeges/img-product/product-3.png" alt="Темная Футболка на сером фоне"
+                width="295" height="298">
+            </div>
+            <h3 class="product__title title-bold">Клетчатая рубашка</h3>
+            <div class="product__rating">
+              <div class="product__stars">
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.35842 16.7243L8.79246 13.701V0L6.17325 5.63991L0 6.38809L4.55449 10.6219L3.35842 16.7243Z"
+                    fill="#FFC633" />
+                </svg>
+                <span class="product__reyting">4.5/5</span>
+              </div>
+            </div>
+            <p class="product__price title-bold">₽7000</p>
+          </div>
+          <div class="product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="./imeges/img-product/product-4.png" alt="Темная Футболка на сером фоне"
+                width="295" height="298">
+            </div>
+            <h3 class="product__title title-bold">Узкие джинсы</h3>
+            <div class="product__rating">
+              <div class="product__stars">
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+
+                <svg class="product__star" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.35842 16.7243L8.79246 13.701V0L6.17325 5.63991L0 6.38809L4.55449 10.6219L3.35842 16.7243Z"
+                    fill="#FFC633" />
+                </svg>
+                <span class="product__reyting">3.5/5</span>
+              </div>
+            </div>
+            <div class="product__price-wrapper">
+              <p class="product__price title-bold-f">₽6000</p>
+              <p class="product__price-old">₽6000</p>
+              <div class="product__discount">-30%</div>
+            </div>
+          </div>
+        </article>
+        <div class="product__btn">
+          <button class="catalog__products-btn">Посмотреть всё</button>
+        </div>
+      </div>
+
+    </section>
+    <section id="Novyye postupleniya" class="top-sales">
+      <div class="container news__container">
+        <h2 class="news__catalog-title title-xs">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+        <article class="news-cotalog__products">
+          <div class="product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="./imeges/img-product/product-1.png" alt="Темная Футболка на сером фоне"
+                width="295" height="298">
+            </div>
+            <h3 class="product__title title-bold">Футболка с лентой</h3>
+            <div class="product__rating">
+              <div class="product__stars">
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.35842 16.7243L8.79246 13.701V0L6.17325 5.63991L0 6.38809L4.55449 10.6219L3.35842 16.7243Z"
+                    fill="#FFC633" />
+                </svg>
+                <span class="product__reyting">4.5/5</span>
+              </div>
+            </div>
+            <p class="product__price title-bold">₽5000</p>
+          </div>
+          <div class="product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="./imeges/img-product/product -2.png" alt="Темная Футболка на сером фоне"
+                width="295" height="298">
+            </div>
+            <h3 class="product__title title-bold">Узкие джинсы</h3>
+            <div class="product__rating">
+              <div class="product__stars">
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+
+                <svg class="product__star" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.35842 16.7243L8.79246 13.701V0L6.17325 5.63991L0 6.38809L4.55449 10.6219L3.35842 16.7243Z"
+                    fill="#FFC633" />
+                </svg>
+                <span class="product__reyting">3.5/5</span>
+              </div>
+            </div>
+            <div class="product__price-wrapper">
+              <p class="product__price title-bold-f">₽5000</p>
+              <p class="product__price-old">₽6000</p>
+              <div class="product__discount">-20%</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="./imeges/img-product/product-3.png" alt="Темная Футболка на сером фоне"
+                width="295" height="298">
+            </div>
+            <h3 class="product__title title-bold">Клетчатая рубашка</h3>
+            <div class="product__rating">
+              <div class="product__stars">
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.35842 16.7243L8.79246 13.701V0L6.17325 5.63991L0 6.38809L4.55449 10.6219L3.35842 16.7243Z"
+                    fill="#FFC633" />
+                </svg>
+                <span class="product__reyting">4.5/5</span>
+              </div>
+            </div>
+            <p class="product__price title-bold">₽7000</p>
+          </div>
+          <div class="product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="./imeges/img-product/product-4.png" alt="Темная Футболка на сером фоне"
+                width="295" height="298">
+            </div>
+            <h3 class="product__title title-bold">Узкие джинсы</h3>
+            <div class="product__rating">
+              <div class="product__stars">
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+                <svg class="product__star" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79255 0L11.4118 5.63991L17.585 6.38809L13.0305 10.6219L14.2266 16.7243L8.79255 13.701L3.35851 16.7243L4.55458 10.6219L8.67844e-05 6.38809L6.17334 5.63991L8.79255 0Z"
+                    fill="#FFC633" />
+                </svg>
+
+                <svg class="product__star" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.35842 16.7243L8.79246 13.701V0L6.17325 5.63991L0 6.38809L4.55449 10.6219L3.35842 16.7243Z"
+                    fill="#FFC633" />
+                </svg>
+                <span class="product__reyting">3.5/5</span>
+              </div>
+            </div>
+            <div class="product__price-wrapper">
+              <p class="product__price title-bold-f">₽6000</p>
+              <p class="product__price-old">₽6000</p>
+              <div class="product__discount">-30%</div>
+            </div>
+          </div>
+        </article>
+        <div class="product__btn">
+          <button class="catalog__products-btn">Посмотреть всё</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+
+    const closeBtn = document.querySelector(".register__button");
+    const registerWrapper = document.querySelector(".register__wrapp");
+    if (closeBtn && registerWrapper) {
+      closeBtn.addEventListener("click", () => {
+        registerWrapper.classList.add("register__wrapp--hidden");
+      });
+    }
+  </script>
+  </div>
+</body>
+
+</html>

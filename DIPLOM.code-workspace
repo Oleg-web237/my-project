@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "DIPLOM",
+			"path": "."
+		}
+	],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "DIPLOM"
+  }
+}
