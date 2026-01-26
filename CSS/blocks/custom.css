@@ -1,0 +1,51 @@
+.custom-stele__container {
+  background-color: #f0f0f0;
+  border-radius: 40px;
+      padding: 70px 64px;
+    border-radius: 40px;
+    max-width: 1239px;
+    margin: 0 auto;
+}
+
+.custom-style-title {
+  padding-block: 70px 64px;
+}
+
+.custom-style__card {
+  width: 100%;
+    height: 100%;
+   
+    display: block;
+    background: var(--main-color);
+border-radius: 20px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+
+
+.custom-style__galery {
+ 
+  display: grid;
+  grid-gap: 20px 20px; 
+  /* ЭТО ВСЕ МЕТОДОМ ТЫКА)) */
+/* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
+/* grid-template-rows: repeat(2,289px); */
+}
+@media (max-width:1270px) {
+  .custom-style__galery {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+
+
+.custom-style__card:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.custom-style__card:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+} 
