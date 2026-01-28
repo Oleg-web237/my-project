@@ -1,8 +1,8 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
 // import Modal from "./modal.js";
-// import { productSlider } from "./product-slider.js";
-// import { sizes } from "./sizes.js";
+import { productSlider } from "./product-slider.js";
+import { sizesSlider } from "./sizes.js";
 
 try {
   const headerFixed = new HeaderFixed({
@@ -33,9 +33,10 @@ try {
     PAGE_BODY: "page__body",
     PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
   });
-
+  
   productSlider();
   sizes();
+  sizesSlider();
 } catch (error) {
   console.error(error);
 }
