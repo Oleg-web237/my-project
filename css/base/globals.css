@@ -1,0 +1,32 @@
+ .page {
+   font-family: var(--font-family);
+   font-weight: 400;
+   color: aliceblue;
+ }
+
+ .page__body {
+   min-width: 375px;
+
+ }
+
+ .page__body--no-scroll {
+   overflow: hidden;
+ }
+
+ .container {
+   width: min(var(--container-width), 100% - var(--container-padding) * 2);
+   margin-inline: auto;
+ }
+
+ /* text nav */
+ .text-tx {
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 10%;
+   color: aliceblue;
+ }
+
+ text {
+   color: aliceblue;
+ }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>PROECT-P</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="container header__container">
+
+      <a class="logo header__logo" href="#">
+        <span class="logo__icon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+            <path d="M3 19L10 6l4 7 2-3 5 9H3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+            <path d="M10 6l2 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="logo__text">Домики в Адыгее</span>
+      </a>
+      <nav class="desktop-menu">
+        <ul class="desktop-menu__list">
+          <li><a href="#" class="desktop-menu__link">Главная</a></li>
+          <li><a href="#" class="desktop-menu__link">Бронирование</a></li>
+          <li><a href="#" class="desktop-menu__link">Проживание</a></li>
+          <li><a href="#" class="desktop-menu__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- телефон на десктопе -->
+      <a class="header__phone-desktop" href="tel:+79991234567">+7 (988) 475-93-66</a>
+
+      <!-- бургер (мобилка) -->
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- overlay -->
+      <div class="menu-overlay" hidden></div>
+
+      <!-- меню (выезжает справа) -->
+      <nav class="mobile-menu" aria-label="Главное меню">
+        <div class="mobile-menu__top">
+          <span class="mobile-menu__title">Меню</span>
+          <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">✕</button>
+        </div>
+        <ul class="mobile-menu__list">
+          <li><a href="#" class="mobile-menu__link">Главная</a></li>
+          <li><a href="#" class="mobile-menu__link">Бронирование</a></li>
+          <li><a href="#" class="mobile-menu__link">Проживание</a></li>
+          <li><a href="#" class="mobile-menu__link">Контакты и Проезд</a></li>
+        </ul>
+        <a class="mobile-menu__phone" href="tel:+79991234567">📞 +7 (988) 475-93-66</a>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__inner">
+
+          <div class="hero__content">
+            <h1 class="hero__title">Уютные домики в горах</h1>
+            <p class="hero__subtitle">Тишина, природа и отдых вдали от города</p>
+
+            <div class="hero__buttons">
+              <a href="#" class="btn btn--primary">Забронировать</a>
+              <a href="#" class="btn btn--outline">Посмотреть домики</a>
+            </div>
+
+            <ul class="hero__benefits">
+              <li>✓ Панорамный вид</li>
+              <li>✓ Камин и тёплый пол</li>
+              <li>✓ До 6 гостей</li>
+            </ul>
+          </div>
+
+          <div class="hero__card">
+            <div class="hero__card-price">
+              от <span>7 900 ₽</span> / ночь
+            </div>
+            <div class="hero__card-status">Свободно сегодня</div>
+            <a href="#" class="hero__card-btn">Проверить даты</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    (() => {
+      const body = document.querySelector(".page__body");
+      const burger = document.querySelector(".burger");
+      const menu = document.querySelector(".mobile-menu");
+      const overlay = document.querySelector(".menu-overlay");
+      const closeBtn = document.querySelector(".mobile-menu__close");
+
+      if (!body || !burger || !menu || !overlay || !closeBtn) return;
+
+      function openMenu() {
+        menu.classList.add("is-open");
+        overlay.hidden = false;
+        body.classList.add("no-scroll");
+        burger.setAttribute("aria-expanded", "true");
+      }
+
+      function closeMenu() {
+        menu.classList.remove("is-open");
+        overlay.hidden = true;
+        body.classList.remove("no-scroll");
+        burger.setAttribute("aria-expanded", "false");
+      }
+
+      burger.addEventListener("click", () => {
+        menu.classList.contains("is-open") ? closeMenu() : openMenu();
+      });
+
+      closeBtn.addEventListener("click", closeMenu);
+      overlay.addEventListener("click", closeMenu);
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && menu.classList.contains("is-open")) closeMenu();
+      });
+
+      menu.addEventListener("click", (e) => {
+        if (e.target.closest(".mobile-menu__link")) closeMenu();
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
