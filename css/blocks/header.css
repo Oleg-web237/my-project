@@ -1,0 +1,31 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(26, 24, 28);
+  border-radius: 10px;
+}
+
+.header__logo-img {
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.header__menu {
+  margin-left: 40px;
+  /* расстояние от логотипа */
+}
+
+
+.menu__list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__phone {
+  margin-left: auto;
+  padding-right: 20px;
+  /* ВОТ ЭТО прижимает вправо */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
