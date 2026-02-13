@@ -1,0 +1,196 @@
+.page__body {
+  background: #202020;
+
+}
+
+.header__container {
+  top: 0;
+  z-index: 4;
+  background: #191818;
+  border-bottom: 1px solid #343232;
+
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 68px;
+
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo__text {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+
+.header__phone-desktop {
+  margin-left: auto;
+  padding-right: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+.burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #fa1d1d00;
+  background: #e15e00;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  margin: 6px 8px;
+  background: #fff;
+}
+
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 11;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100px;
+  height: 100vh;
+  width: min(360px, 86vw);
+  background: #bdbdbd;
+  z-index: 1002;
+
+  transform: translateX(110%);
+  transition: transform 280ms ease;
+
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu__top {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.mobile-menu__title {
+  font-weight: 700;
+  color: #000000;
+}
+
+.mobile-menu__close {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.mobile-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  color: #111111;
+  font-size: 18px;
+}
+
+.mobile-menu__phone {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+.header__phone-desktop {
+  position: relative;
+}
+
+.phone-icon {
+  position: absolute;
+  top: 0px;
+  left: -26px;
+}
+
+@media (max-width: 576px) {
+  .header__phone-desktop {
+    display: none;
+  }
+
+
+}
+
+@media (width <=576px) {}
+
+
+.page__body.no-scroll {
+  overflow: hidden;
+}
+
+.desktop-menu {
+  margin-left: 40px;
+}
+
+.desktop-menu__list {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.phone-icon {
+  flex: 0 0 auto;
+}
+
+@media (width <=976px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .burger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
