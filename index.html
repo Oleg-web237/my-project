@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Клевер Хаос</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo header__logo" href="index.html">
+        <img class="header__logo-img" src="./icons/protct-p-logo-2.png" width="40" height="40"
+          alt="Логотип Клевер Хаус">
+        <span class="logo__text">
+        </span>
+      </a>
+
+      <nav class="desktop-menu" aria-label="Основная навигация">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html" class="desktop-menu__link active">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a href="#house-card" class="desktop-menu__link">Домики</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Зеленый дом</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Синий дом</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Белый дом</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__phone-desktop" href="tel:+79884759366">
+        <span class="phone-icon">📞</span>
+        <div class="phone-block">
+          <span class="phone-label">Бронирование</span>
+          <span class="phone-number">+7 (988) 475-93-66</span>
+        </div>
+      </a>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="menu-overlay" hidden></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильное меню">
+      <div class="mobile-menu__top">
+        <span class="mobile-menu__title">Меню</span>
+        <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+          ✕
+        </button>
+      </div>
+      <ul class="mobile-menu__list">
+        <li><a href="#" class="mobile-menu__link">Главная</a></li>
+
+        <li><a href="#" class="mobile-menu__link">Зеленый дом</a></li>
+        <li><a href="#" class="mobile-menu__link">Синий дом</a></li>
+        <li><a href="#" class="mobile-menu__link">Белый дом</a></li>
+      </ul>
+
+      <a class="mobile-menu__phone" href="tel:+79884759366">
+        📞 +7 (988) 475-93-66
+      </a>
+    </nav>
+  </header>
+  <main>
+    <!-- ////hero//// -->
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title title-hero-ts">
+          Уютный отдых в
+          <span class="hero__title-text">горах Адыгеи</span>
+        </h1>
+        <div class="hero__actions">
+          <a href="#" class="hero__btn hero__btn--secondary">Посмотреть домики</a>
+        </div>
+    </section>
+
+
+    <!-- ////houses////// -->
+    <section id="house-card" class="house">
+      <div class="curve-top">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <!-- КРИВАЯ ВВЕРХ -->
+          <path d="M0,120 C300,40 600,160 900,80 C1200,0 1440,60 1440,60 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+      <div class="container house__container">
+        <h2 class="house-title title-ts">Наши дома</h2>
+        <p class="house-text ">Выберите идеальный домик для отдыха в горах Адыгеи.
+          Наши уютные домики расположены в 70 км от города Майкоп — в самом сердце горной природы.
+          Здесь вас ждёт тишина леса, чистый воздух и атмосфера полного уединения вдали от городской суеты.
+        </p>
+        <div class="house__card-wrapper">
+          <div class="house__card house__card--green">
+            <div class="house__img">
+              <img class="house__imeges" src="./imeges/THE GREEN HOUSE/Houses-1.png" width="300" height="200"
+                alt="Зеленый домик в лесу" class="house__card-img">
+            </div>
+            <div class="house__card-wrapp">
+              <h3 class="house__card-title">Зеленый дом</h3>
+              <p class="house__card-text">Каждый дом находится на отдельной территории 2000 кв. м.</p>
+              <p class="house__card-price">Цена: 9000 руб/сутки</p>
+              <a href="green.html" class="house__card-link">Подробнее</a>
+            </div>
+          </div>
+          <div class="house__card house__card--blue">
+            <div class="house__img">
+              <img class="house__imeges" src="./imeges/THE WHITE HOUSE/white.png" width="300" height="200"
+                alt="Зеленый домик в лесу" class="house__card-img">
+            </div>
+            <div class="house__card-wrapp">
+              <h3 class="house__card-title house__card-title--blue">Синий дом</h3>
+              <p class="house__card-text">Каждый дом находится на отдельной территории 1500 кв. м.</p>
+              <p class="house__card-price house__card-price--blue">Цена: 17000 руб/сутки</p>
+              <a href="#" class="house__card-link house__card-link--blue">Подробнее</a>
+            </div>
+          </div>
+          <div class="house__card house__card--white">
+            <div class="house__img">
+              <img class="house__imeges" src="./imeges/THE BLUE HOUSE/blue.png" width="300" height="200"
+                alt="Зеленый домик в лесу" class="house__card-img">
+            </div>
+            <div class="house__card-wrapp">
+              <h3 class="house__card-title house__card-title--white">Белый дом</h3>
+              <p class="house__card-text house__card-text--white">Каждый дом находится на отдельной территории 1900 кв.
+                м.</p>
+              <p class="house__card-price house__card-price--white">Цена: 5000 руб/сутки</p>
+              <a href="#" class="house__card-link house__card-link--white">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- ////SKRIPN///// -->
+  <script src=" ./js/main.js">
+  </script>
+
+</body>
+
+</html>

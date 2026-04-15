@@ -1,0 +1,39 @@
+ .page {
+   font-family: var(--font-family);
+   font-weight: 400;
+   color: aliceblue;
+ }
+
+ .page__body {
+   min-width: 375px;
+   font-family: 'Times New Roman', Times, serif;
+   /* font-weight: 400; */
+   font-size: 17px;
+   color: aliceblue;
+ }
+
+ .page__body--no-scroll {
+   overflow: hidden;
+ }
+
+ .container {
+   width: min(var(--container-width), 100% - var(--container-padding) * 2);
+   margin-inline: auto;
+ }
+
+ text {
+   color: aliceblue;
+ }
+
+ .title-hero-ts {
+   font-size: 100px;
+   color: #ffffff;
+ }
+
+ .title-ts {
+   font-size: 70px;
+   /* font-family: Georgia, 'Times New Roman', Times, serif; */
+   font-family: TenorSans;
+   font-weight: 700;
+   color: #000000;
+ }
