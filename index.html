@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Клевер Хаос</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo header__logo" href="index.html">
+        <img class="header__logo-img" src="./icons/protct-p-logo-2.png" width="40" height="40"
+          alt="Логотип Клевер Хаус">
+        <span class="logo__text">
+        </span>
+      </a>
+
+      <nav class="desktop-menu" aria-label="Основная навигация">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html" class="desktop-menu__link active">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a href="#house-card" class="desktop-menu__link">Домики</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Зеленый дом</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Синий дом</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Белый дом</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__phone-desktop" href="tel:+79884759366">
+        <span class="phone-icon">📞</span>
+        <div class="phone-block">
+          <span class="phone-label">Бронирование</span>
+          <span class="phone-number">+7 (988) 475-93-66</span>
+        </div>
+      </a>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="menu-overlay" hidden></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильное меню">
+      <div class="mobile-menu__top">
+        <span class="mobile-menu__title">Меню</span>
+        <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+          ✕
+        </button>
+      </div>
+      <ul class="mobile-menu__list">
+        <li><a href="#" class="mobile-menu__link">Главная</a></li>
+
+        <li><a href="#" class="mobile-menu__link">Зеленый дом</a></li>
+        <li><a href="#" class="mobile-menu__link">Синий дом</a></li>
+        <li><a href="#" class="mobile-menu__link">Белый дом</a></li>
+      </ul>
+
+      <a class="mobile-menu__phone" href="tel:+79884759366">
+        📞 +7 (988) 475-93-66
+      </a>
+    </nav>
+  </header>
+  <main>
+    <!-- ////hero//// -->
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title title-hero-ts">
+          Уютный отдых в
+          <span class="hero__title-text">горах Адыгеи</span>
+        </h1>
+        <div class="hero__actions">
+          <a href="#house-card-green" class="hero__btn hero__btn--secondary">Посмотреть домики</a>
+        </div>
+    </section>
+
+
+    <!-- ////houses////// -->
+    <section id="house-card" class="house">
+      <div class="curve-top">
+        <!-- КРИВАЯ ВВЕРХ -->
+        <!-- <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,120 C300,40 600,160 900,80 C1200,0 1440,60 1440,60 L1440,120 L0,120 Z"></path>
+        </svg> -->
+      </div>
+      <div class="container house__container">
+        <h2 id="house-card-green" class="house-title title-ts">Наши дома</h2>
+        <p class="house-text ">Выберите идеальный домик для отдыха в горах Адыгеи.
+          Наши уютные домики расположены в 70 км от города Майкоп — в самом сердце горной природы.
+          Здесь вас ждёт тишина леса, чистый воздух и атмосфера полного уединения вдали от городской суеты.
+        </p>
+        <div class="house__card-wrapper">
+          <div class="house__card house__card--green">
+            <div class="house__img">
+              <img class="house__imeges" src="./imeges/THE GREEN HOUSE/Houses-1.png" width="300" height="200"
+                alt="Зеленый домик в лесу" class="house__card-img">
+            </div>
+            <div class="house__card-wrapp">
+              <h3 class="house__card-title">Зеленый дом</h3>
+              <p class="house__card-text">Каждый дом находится на отдельной территории 2000 кв. м.</p>
+              <p class="house__card-price">Цена: 9000 руб/сутки</p>
+              <p class="house__card-guests-count"> На /7 человек</p>
+              <a href="green.html" class="house__card-link">Подробнее</a>
+            </div>
+          </div>
+          <div class="house__card house__card--blue  house__card--disabled">
+            <div class="house__img">
+              <img class="house__imeges" src="./imeges/THE WHITE HOUSE/white.png" width="300" height="200"
+                alt="Зеленый домик в лесу" class="house__card-img">
+              <div class="coming-soon">
+                Скоро
+              </div>
+            </div>
+            <div class="house__card-wrapp">
+              <h3 class="house__card-title house__card-title--blue">Синий дом</h3>
+              <p class="house__card-text">Каждый дом находится на отдельной территории 1500 кв. м.</p>
+              <p class="house__card-price house__card-price--blue">Цена: 17000 руб/сутки</p>
+              <!-- <a href="#" class="house__card-link house__card-link--blue">Подробнее</a> -->
+              <span class="house__card-link house__card-link--blue">
+                Скоро
+              </span>
+            </div>
+          </div>
+          <div class="house__card house__card--white house__card--disabled">
+            <div class="house__img">
+              <img class="house__imeges" src="./imeges/THE BLUE HOUSE/blue.png" width="300" height="200"
+                alt="Зеленый домик в лесу" class="house__card-img">
+              <div class="coming-soon">
+                Скоро
+              </div>
+            </div>
+            <div class="house__card-wrapp">
+              <h3 class="house__card-title house__card-title--white">Белый дом</h3>
+              <p class="house__card-text house__card-text--white">Каждый дом находится на отдельной территории 1900 кв.
+                м.</p>
+              <p class="house__card-price house__card-price--white">Цена: 5000 руб/сутки</p>
+              <!-- <a href="#" class="house__card-link house__card-link--white">Подробнее</a> -->
+              <span class="house__card-link house__card-link--blue">
+                Скоро
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- adventures -->
+    <section class="adventures">
+      <div class="container adventures__container">
+        <div class="adventures__wrapper-title">
+          <img src="./icons/landscape_50dp_48752C_FILL0_wght400_GRAD0_opsz48.png" alt="">
+          <p class="adventures__title">-Чем заняться-</p>
+          <h3 class="adventures__text"> Приключения, которые запомнятся</h3>
+          <p class="adventures__text-text">
+            Выбирайте активности по душе и открывайте горы с новой стороны.
+            Адреналин,природа и незабываемые эмоции ждут вас!
+          </p>
+        </div>
+        <div class="adventures__grid">
+          <div class="grid__card">
+            <img class="grid__img" src="imeges/adventures-img/photo_2026-05-17_17-09-01.jpg"
+              alt="Рафтинг по горной реке с группой туристов на надувном рафте" width="600" height="600"
+              class="grid__card-img">
+            <div class="card__content">
+              <h3 class="content__title">Рафтинг</h3>
+              <p>Преодолевайте бурные пороги и наслаждайтесь яркими эмоциями в компании опытных инструкторов.</p>
+            </div>
+          </div>
+          <div class="grid__card">
+            <img class="grid__img" src="imeges/adventures-img/card-uaz.png"
+              alt="Внедорожник на горной дороге во время экскурсии по бездорожью" width="600" height="600"
+              class="grid__card-img">
+            <div class="card__content">
+              <h3 class="content__title">Джипинг</h3>
+              <p>Путешествуйте по живописному бездорожью и открывайте труднодоступные уголки природы.</p>
+            </div>
+          </div>
+          <div class="grid__card">
+            <img class="grid__img kvadro-img" src="imeges/adventures-img/kvadro.png"
+              alt="Группа туристов на квадроциклах в горах во время активного тура" width="600" height="600"
+              class="grid__card-img">
+            <div class="card__content">
+              <h3 class="content__title">Квадроциклы</h3>
+              <p>Покоряйте лесные тропы, горные дороги и речные броды на мощных квадроциклах.</p>
+            </div>
+          </div>
+          <div class="grid__card">
+            <img class="grid__img img-obj" src="imeges/adventures-img/photo_2026-05-17_17-24-14.jpg"
+              alt="Турист на лошади во время конной прогулки по горным маршрутам" width="600" height="600"
+              class="grid__card-img">
+            <div class="card__content">
+              <h3 class="content__title">Конные прогулки</h3>
+              <p>Наслаждайтесь спокойными маршрутами по живописным тропам и откройте природу с новой стороны верхом на
+                лошади.</p>
+            </div>
+          </div>
+          <div class="grid__card">
+            <img class="grid__img" src="imeges/adventures-img/img-1.png"
+              alt="Турист идет по горной тропе с рюкзаком на фоне гор" width="600" height="600" class="grid__card-img">
+            <div class="card__content">
+              <h3 class="content__title">Пешие маршруты</h3>
+              <p>Отправляйтесь в поход по живописным тропам и наслаждайтесь красотой горных пейзажей.</p>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <img class="grid__img" src="imeges/adventures-img/panarama.png"
+              alt="Смотровая площадка с панорамным видом на горы и закат" width="600" height="600"
+              class="grid__card-img">
+            <div class="card__content">
+              <h3 class="content__title">Смотровые площадки</h3>
+              <p>Откройте захватывающие панорамы горных хребтов, облаков и долин с лучших точек обзора.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+    <!-- adventures--END -->
+
+    <!-- location -->
+    <section class="location">
+      <div class="container location__container">
+        <div class="location__wrapper">
+          <div class="location__wrapp-title">
+            <h2 class="location__title title-ts">
+              Как нас найти
+            </h2>
+          </div>
+          <div class="location__wrapp-content">
+            <div class="location__content">
+              <div class="location__content-titile-wrapp">
+                <img class="location__img" src="./icons/protct-p-logo-2.png" alt="" class="cocation__content-img"
+                  width="80">
+                <h3 class="location__content-title">Контакты</h3>
+              </div>
+              <div class="location__item-wrapp">
+                <img src="./icons/location_on_50dp_48752C_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40" height="40">
+                <p class="location__item">
+                  Адыгея, Майкопский район .с ХАМЫШКИ
+                </p>
+              </div>
+
+              <div class="location__text-wrapp">
+                <img src="./icons/timer_50dp_48752C_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40" height="40">
+                <p class="location__text">Мы на связи ежедневно
+                </p>
+              </div>
+              <!-- <a href="mailto:oleg.aleksandr9366@mail.ru">
+                oleg.aleksandr9366@mail.ru
+              </a> -->
+              <div class="location__tel-wrapp">
+                <img src="./icons/call_50dp_48752C_FILL0_wght400_GRAD0_opsz48.png" alt="" width="35" height="35">
+                <a class="location__item-tel" href="tel:+79884759366">
+                  +7 (988) 475-93-66
+                </a>
+              </div>
+              <div class="location__socials">
+                <a class="location__socials-icon" href="#" target="_blank">
+                  <img src="./icons/free-icon-telegram-2111646.png" alt="telegram" width="40" height="40">
+                </a>
+                <a class="location__socials-icon" href="#" target="_blank">
+                  <img src="./icons/free-icon-instagram-1384063.png" alt="instagram" width="40" height="40">
+                </a>
+                <a class="location__socials-icon" href="#" target="_blank">
+                  <img src="./icons/MAX-48x48.png" alt="MAX" width="40" height="40">
+                </a>
+              </div>
+
+            </div>
+            <div class="location__map">
+              <iframe class="map-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A..." width="100%"
+                height="100%" frameborder="0">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- <div class="container">
+        <div class="location__wrapper">
+          <div class="location__map-title">
+            <span class="location__label">
+              Локация
+            </span>
+        
+          </div>
+       
+          <div class="location__content">
+            <p class="location__text">
+              Клевер Хаус расположен в живописном месте Адыгеи.
+              Уютный отдых среди природы, гор и тишины.
+            </p>
+            <div class="location__items">
+            
+              <div class="location__item">
+                🏔 Рядом горные маршруты
+              </div>
+              <div class="location__item">
+                🚗 Удобный подъезд к домикам
+              </div>
+            </div>
+          </div>
+       
+          <div class="location__map">
+          
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <!-- location-END -->
+  </main>
+
+
+  <!-- ////SKRIPN///// -->
+  <script src=" ./js/main.js">
+  </script>
+
+</body>
+
+</html>

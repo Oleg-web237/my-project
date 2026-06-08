@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Клевер хаус green</title>
+</head>
+
+<body class="green-page .hero">
+
+  <!-- ///////////// -->
+  <!-- header -->
+  <header class="header header__green">
+    <div class="container header__container">
+      <a class="logo header__logo" href="index.html">
+        <img class="header__logo-img" src="./icons/protct-p-logo-2.png" width="40" height="40"
+          alt="Логотип Клевер Хаус">
+        <span class="logo__text">
+        </span>
+      </a>
+
+      <nav class="desktop-menu" aria-label="Основная навигация">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html" class="desktop-menu__link active">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a href="#house-card" class="desktop-menu__link">Домики</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Зеленый дом</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Синий дом</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="desktop-menu__link">Белый дом</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__phone-desktop" href="tel:+79884759366">
+        <span class="phone-icon">📞</span>
+        <div class="phone-block">
+          <span class="phone-label">Бронирование</span>
+          <span class="phone-number">+7 (988) 475-93-66</span>
+        </div>
+      </a>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="menu-overlay" hidden></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильное меню">
+      <div class="mobile-menu__top">
+        <span class="mobile-menu__title">Меню</span>
+        <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+          ✕
+        </button>
+      </div>
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" class="mobile-menu__link">Главная</a></li>
+
+        <li><a href="#" class="mobile-menu__link">Зеленый дом</a></li>
+        <li><a href="#" class="mobile-menu__link">Синий дом</a></li>
+        <li><a href="#" class="mobile-menu__link">Белый дом</a></li>
+      </ul>
+
+      <a class="mobile-menu__phone" href="tel:+79884759366">
+        📞 +7 (988) 475-93-66
+      </a>
+    </nav>
+  </header>
+
+  <!-- ///////////// -->
+  <!-- header-end -->
+  <main class="main__green">
+
+    <!-- hero_green -->
+    <section class="hero_green">
+      <div class="container green__container">
+        <div class="green__content-inner">
+          <div class="green__info">
+            <h1 class="green__title title-ts">
+              Клевер хаус
+            </h1>
+            <h3 class="green__title-text">
+              Уютный домик на отдельной територии
+            </h3>
+            <p class="green__info-text">
+              Идеальное место для отдыза и перезагрузки.
+              Тишина,природа и все удобства для вашего комфортного проживания.
+            </p>
+
+            <!-- бронирование -->
+            <!-- ========================= -->
+            <!-- BOOKING BUTTON -->
+            <!-- ========================= -->
+            <!-- <button class="booking-btn open-booking" id="openBooking">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M8 2V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M16 2V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <rect x="3" y="4" width="18" height="17" rx="3" stroke="currentColor" stroke-width="2" />
+                <path d="M3 9H21" stroke="currentColor" stroke-width="2" />
+              </svg>
+              Забронировать дом
+            </button> -->
+            <!-- ========================= -->
+            <!-- POPUP -->
+            <!-- ========================= -->
+            <div class="booking-modal" id="bookingModal">
+
+              <div class="booking-content">
+
+                <button class="booking-close" id="closeBooking">
+                  ×
+                </button>
+
+                <h2 class="booking-title">
+                  Бронирование домика
+                </h2>
+
+                <p class="booking-subtitle">
+                  Выберите даты проживания
+                </p>
+
+                <form class="booking-form">
+
+                  <!-- Заезд -->
+                  <div class="booking-group">
+                    <label>Дата заезда</label>
+
+                    <input type="date" class="booking-input">
+                  </div>
+
+                  <!-- Выезд -->
+                  <div class="booking-group">
+                    <label>Дата выезда</label>
+
+                    <input type="date" class="booking-input">
+                  </div>
+
+                  <!-- Гости -->
+                  <div class="booking-group">
+                    <label>Количество гостей</label>
+
+                    <select class="booking-input">
+
+                      <option>1 гость</option>
+                      <option>2 гостя</option>
+                      <option>3 гостя</option>
+                      <option>4 гостя</option>
+                      <option>5 гостей</option>
+                      <option>6 гостей</option>
+
+                    </select>
+                  </div>
+
+                  <!-- Телефон -->
+                  <div class="booking-group">
+                    <label>Телефон</label>
+
+                    <input type="tel" class="booking-input" placeholder="+7 (___) ___-__-__">
+                  </div>
+
+                  <!-- Кнопка -->
+                  <button type="submit" class="booking-submit">
+                    Отправить заявку
+                  </button>
+
+                </form>
+
+              </div>
+
+            </div>
+            <!-- бронирование-END -->
+
+          </div>
+          <div class="green__images-hero">
+            <img class="green__inner-img" src="./imeges/THE GREEN HOUSE/green-hero/hero-grin.png" width="1000" alt="">
+            <div class="green__info-card">
+              <img class="info__card-img" src="./imeges/THE GREEN HOUSE/green-hero/Houses-green-hero-1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="green__features">
+          <div class="feature-item">
+            <img class="feature-img" src="icons/icon-g.png" width="50" height="50" alt="">
+            <span class="feature-title">6 Гостей</span>
+            <p class="feature-title-text">Комфортное размещение</p>
+          </div>
+          <div class="feature-item">
+            <img class="feature-img" src="icons/icon-bed.png" width="50" height="50" height="50" alt="">
+            <span class="feature-title">2 Спальни</span>
+            <p class="feature-title-text">Уютные комнаты для отдыха</p>
+          </div>
+          <div class="feature-item">
+            <img class="feature-img" src="icons/icon-bathhouse.png" width="50" height="50">
+            <span class="feature-title">Баня</span>
+            <p class="feature-title-text">Настоящая баня на дровах</p>
+
+          </div>
+          <div class="feature-item">
+            <img class="feature-img" src="icons/icon-vat.png" width="50" height="80">
+            <span class="feature-title">Чан</span>
+            <p class="feature-title-text">Чан для рилакса</p>
+
+          </div>
+
+          <div class="feature-item">
+            <img class="feature-img" src="icons/icon-waifai.png" width="50" height="50">
+            <span class="feature-title">Wi-Fi</span>
+            <p class="feature-title-text">Высокоскоростной интырнет</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="green__gallery container">
+        <h2 class="gallery__title">Галерея</h2>
+        <div class="gallery" id="gallery">
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-1.png" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-2.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-3.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-4.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-5.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-6.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-8.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-9.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-10.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-11.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-12.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-13.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-14.jpg" alt="">
+          </div>
+
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-15.jpg" alt="">
+          </div>
+
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-16.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-17.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-18.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-19.jpg" alt="">
+          </div>
+
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-20.jpg" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-21.png" alt="">
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" width="959" height="1280"
+              src="./imeges/THE GREEN HOUSE/GALLERY-green/green-house-22.jpg" alt="">
+          </div>
+
+
+        </div>
+        <button class="gallery-btn" id="showMore">
+          Показать всю галерею
+        </button>
+      </div>
+
+      <div class="slider ">
+        <div class="slider__container">
+          <button class="slider__btn slider__btn_left">
+            <img class="fas fa-chevron-left" src="./icons/icon-left.png" alt="">
+          </button>
+
+          <div class="slider__image"></div>
+
+          <button class="slider__btn slider__btn_right">
+            <img class="fas fa-chevron-right" src="./icons/icon-right.png" alt="">
+          </button>
+        </div>
+
+        <button class="slider__close">
+          <img src="./icons/icon-close.png" alt="" class="far fa-times-circle">
+        </button>
+      </div>
+      </div>
+    </section>
+    <!-- hero_green-end -->
+
+    <!-- pricing -->
+    <section class=" pricing">
+      <div class=" container pricing_container">
+        <div class="pricing__btn-inner">
+          <button class="booking-btn open-booking" id="openBooking">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M8 2V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 2V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <rect x="3" y="4" width="18" height="17" rx="3" stroke="currentColor" stroke-width="2" />
+              <path d="M3 9H21" stroke="currentColor" stroke-width="2" />
+            </svg>
+            Забронировать дом
+          </button>
+        </div>
+
+      </div>
+    </section>
+    <!-- pricing-ENG -->
+
+
+
+  </main>
+  <script src=" ./js/main.js">
+  </script>
+</body>
+
+</html>
