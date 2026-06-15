@@ -1,17 +1,237 @@
 /* ///////////////////////////////////////////////////// */
 /* pricing */
 /* ///////////////////////////////////////////////////// */
-.pricing__btn-inner {
+/* .pricing__btn-inner {
   display: flex;
   justify-content: center;
+} */
+.pricing__wrapper {
+  display: flex;
+  gap: 150px;
 }
 
 
+.pricing {
+  padding: 40px 15px 15px 15px;
+}
+
+.pricing__title-wrapp {
+  text-align: center;
+}
+
+.pricing__subtitle {
+  font-family: TenorSans;
+  font-size: 23px;
+  padding: 15px 0px 80px;
+}
+
+.pricing__accommodation {
+  max-width: 600px;
+  height: 350px;
+  background-color: rgba(231, 250, 215, 0.476);
+  padding: 15px;
+  border-radius: 15px;
+
+}
+
+.pricing__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 38px;
+}
+
+.pricing__accommodation-title {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.pricing__accommodation-text {
+  font-family: TenorSans;
+  font-size: 22px;
+  font-weight: 100;
+  padding-bottom: 30px;
+
+}
+
+.accommodation-discount {
+  font-family: TenorSans;
+  font-size: 22px;
+  font-weight: 100;
+
+}
+
+.pricing__accommodation-discount {
+  display: flex;
+  padding: 20px 0px 15px;
+  background-color: #c5e9be;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+.pricing__icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.pricing__cost {
+  max-width: 400px;
+  height: 100%;
+}
+
+.pricing__cost-title {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.pricing__cost-text {
+  margin-top: 30px;
+}
+
+.pricing__img {}
+
+.pricing__phone-desktop {
+  /* background-color: #4c8441; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 300px;
+  padding: 10px;
+  margin-top: 30px;
+  border: solid 1px #EA3323;
+}
+
+.pricing__phone-desktop {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pricing__phone-desktop:hover {
+  transform: translateY(-3px);
+}
 
 
+.pricing__phone-number {
+  color: #EA3323;
+  font-size: 20px;
+}
+
+.pricing__icon-wrapp {
+  padding: 10px 0px 10px;
+}
+
+/* Дополнительные услуги */
+.pricing__services {
+  text-align: center;
+}
+
+.pricing__services-title {
+  padding-bottom: 20px;
+}
+
+.pricing__services-text {
+  padding-bottom: 20px;
+}
+
+.bathhouse__title {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.bathhouse__text {
+  font-family: TenorSans;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: solid 1px #c3bfbf;
+  padding-bottom: 10px;
+}
+
+.bathhouse__price {
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 15px;
+  color: #EA3323;
+}
+
+.pricing__services-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.pricing__bathhouse {
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+.bathhouse__img {
+  max-width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0 90px 90px 0;
+}
+
+.bathhouse__wrapp {
+  padding: 10px;
+}
+
+.pricing__bathhouse {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.pricing__bathhouse:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Дополнительные услуги--END */
+
+/* АДАПТИВ */
+@media (width < 978px) {
+  .pricing__services-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (width < 978px) {
+  .pricing__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (width < 768px) {
+  .pricing__bathhouse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing__icon-cost {
+    margin: 51px 0px 0px 0px;
+  }
+}
+
+@media (width < 780px) {
+  .pricing__title {
+    font-size: 45px;
+  }
+
+  .pricing__services-title {
+    font-size: 40px;
+
+  }
+}
 
 
-
-/* ///////////////////////////////////////////////////// */
-/* pricing--end */
-/* ///////////////////////////////////////////////////// */
+/* АДАПТИВ--END */

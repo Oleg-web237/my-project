@@ -149,7 +149,6 @@
                      GALLERY
 ------------------------------------------------ */
 .gallery__title {
-
   display: flex;
   justify-content: center;
   font-size: 50px;
@@ -166,7 +165,6 @@
 .gallery {
   width: 100%;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
   grid-template-columns:
     repeat(2, 1fr);
   gap: 5px 5px;
@@ -350,7 +348,6 @@
 
 .booking-group label {
   color: #3E3428;
-
   font-weight: 500;
 }
 
@@ -358,17 +355,11 @@
 
 .booking-input {
   width: 100%;
-
   padding: 16px 18px;
-
   border: 1px solid #ddd;
-
   border-radius: 14px;
-
   font-size: 16px;
-
   outline: none;
-
   transition: .3s;
 }
 
@@ -380,21 +371,14 @@
 
 .booking-submit {
   margin-top: 10px;
-
   padding: 18px;
-
   border: none;
   border-radius: 16px;
-
   background: #B5793E;
-
   color: #fff;
-
   font-size: 18px;
   font-weight: 600;
-
   cursor: pointer;
-
   transition: .3s;
 }
 
@@ -539,6 +523,7 @@
     grid-template-columns: repeat(2, 230px);
   }
 
+
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -547,6 +532,15 @@
 @media (width < 500px) {
   .green__features {
     grid-template-columns: repeat(1, 230px);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .feature-item {
+    /* width: 400px; */
+    width: 230px;
+    height: 200px;
   }
 
   .green__info-card {
