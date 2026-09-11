@@ -1,0 +1,78 @@
+ .page {
+   font-family: var(--font-family);
+   font-weight: 400;
+   color: aliceblue;
+ }
+
+ .page__body {
+   min-width: 375px;
+   font-family: 'Times New Roman', Times, serif;
+   /* font-weight: 400; */
+   font-size: 17px;
+   color: aliceblue;
+ }
+
+ .green-page {
+   background-color: #fefffe;
+   /* background-color: #dbffe5; */
+   /* очень светлый мятный */
+
+ }
+
+ .page__body--no-scroll {
+   overflow: hidden;
+ }
+
+ .container {
+   width: min(var(--container-width), 100% - var(--container-padding) * 2);
+   margin-inline: auto;
+ }
+
+ text {
+   color: aliceblue;
+ }
+
+ .title-hero-ts {
+   font-size: 100px;
+   color: #ffffff;
+ }
+
+ .title-ts {
+   font-size: 70px;
+   /* font-family: Georgia, 'Times New Roman', Times, serif; */
+   font-family: TenorSans;
+   font-weight: 500;
+   color: #000000;
+ }
+
+ .text-globals {
+   font-family: TenorSans;
+   font-size: 22px;
+   font-weight: 500;
+   color: #000000;
+ }
+
+
+ /* --- Хлебные крошки (Breadcrumbs) --- */
+ .breadcrumbs {
+   padding-top: 120px;
+   padding-left: 30px;
+   padding-bottom: 20px;
+   font-size: 18px;
+   color: #259b38;
+ }
+
+ .bc-link {
+   color: #5a5858;
+ }
+
+ /* плавный переход страниц */
+
+
+ body {
+   transition: opacity 0.4s ease;
+ }
+
+ body.fade-out {
+   opacity: 0;
+ }
